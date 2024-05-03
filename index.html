@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<style type="text/css">
+	
+.h25{height: 25px}
+.h30{height: 30px}	
+.h50{height: 50px}
+.h100{height: 100px}
+.h130{height: 130px}
+.h150{height: 150px}
+.h200{height: 200px}
+.h250{height: 250px}
+.h300{height: 300px}
+.h400{height: 400px}
+.h500{height: 500px}
+.h550{height: 550px}
+.h600{height: 600px}
+.h610{height: 610px}
+.h700{height: 700px}
+
+.w10{width: 10%}
+.w15{width: 15%}
+.w16{width: 16.6%}
+.w20{width: 20%}
+.w25{width: 25%}
+.w26{width: 26%}
+.w30{width: 30%}
+.w31{width: 31%}
+.w35{width: 35%}
+.w40{width: 40%}
+.w48{width: 48%}
+.w50{width: 50%}
+.w60{width: 60%}
+.w65{width: 65%}
+.w70{width: 70%}
+.w80{width: 80%}
+.w85{width: 85%}
+.w90{width: 90%}
+.w100{width: 100%}
+
+.bgr{background: red}
+.bgy{background: yellow;}
+.bgg{background: green}
+.bggy{background: grey}
+.bgo{background: orange}
+.bgb{background:blue}
+.bgp{background: pink;}
+.bgbk{background: #00000000;}
+.bgbk:hover{background: #00000085;}
+
+.clr{color: red}
+.clbk{color: black;}
+.clbbk{color: black;transition: 1s}
+.clbbk:hover{color: red}
+.clw{color: white}
+.clww{color: white;transition: 1s}
+.clww:hover{color:#a0a3a0}
+.cllw{color: white;transition: 1s}
+.cllw:hover{color: red}
+.cl{color: #8b6bff}
+.clgy{color: #c2bbba;}
+.clgyy{color: #c2bbba;transition: 1s}
+.clgyy:hover{color: white}
+
+
+.fl{float: left;}
+.fr{float: right;}
+.br{border-radius: 5px;border: none;}
+
+.fs10{font-size: 10px}
+.fs17{font-size: 17px}
+.fs20{font-size: 20px}
+.fs23{font-size: 23px}
+.fs25{font-size: 25px}
+.fs30{font-size: 30px}
+.fs35{font-size: 35px}
+
+.ffc{font-family: cursive;}
+.ffm{font-family: sans-serif;}
+
+.ml10{margin-left: 10px}
+.ml20{margin-left: 20px}
+.ml50{margin-left: 50px}
+.ml100{margin-left: 100px}
+.ml130{margin-left: 130px}
+.ml900{margin-left: 900px}
+.ml950{margin-left: 950px}
+
+.mt10{margin-top: 10px}
+
+.bi1{background-image: url('pic/18.jpg');height: 600px;width: 65%;background-size: cover;}
+
+.bi2{background-image: url('pic/13.jpg');height: 300px;width: 35%;background-size: cover}
+
+.bi3{background-image: url('pic/19.jpg');height: 300px;width: 35%;background-size: cover;}
+
+.bi4{background-image: url('pic/20.jpg');height: 400px;width: 40%;background-size: 110% 110%;background-position:center;transition: 2s}
+.bi4:hover{background-size: 100% 100%;transition: 2s}
+
+.bi5{background-image: url('pic/15.jpg');height: 400px;width: 20%;background-size: cover;}
+
+.bi6{background-image: url('pic/16.jpg');height: 400px;width: 20%;background-size: cover;}
+.bi7{background-image: url('pic/17.jpg');height: 100px;width: 80%;margin-left: 100px}
+
+.bi8{background-image: url('pic/22.jpg');height: 400px;width: 40%;background-size: 110% 110%;background-position: center;transition: 2s}
+.bi8:hover{background-size: 100% 100%;transition: 2s}
+
+.bi9{background-image: url('pic/23.jpg');height: 400;width: 40%;background-size: 110% 110%;
+	background-position:center;transition:2s }
+.bi9:hover{background-size:100% 100%;transition:2s}
+
+.bi10{background-image: url('pic/29.jpg');height: 400px;width: 100%;background-attachment: fixed;}
+
+.bi11{background-image: url('pic/32.jpg');height: 400px;width: 20%;background-size: cover;}
+
+.bi12{background-image: url('pic/14.jpg');height: 400px;width: 20%;background-size: cover;}
+
+.bi13{background-image: url('pic/30.jpg');height: 400px;width: 20%;background-size: cover;}
+
+.bi14{background-image: url('pic/31.jpg');height: 400px;width: 100%;background-size: cover;}
+
+.bi15{background-image: url('pic/35.jpg');height: 200px;width: 100%;background-size: cover;}
+
+.bi16{background-image: url('pic/33.jpg');height: 200px;width: 100%;background-size: cover;}
+
+.bi17{background-image: url('pic/37.jpg');height: 400px;width: 100%;background-size: cover;}
+
+.bi18{background-image: url('pic/36.jpg');height: 610px;width: 48%;background-size: cover;}
+
+.bi19{background-image: url('pic/38.jpg');height: 250px;width: 31%;background-size: 110% 110%;background-position: center;transition: 2s}
+.bi19:hover{background-size: 100% 100%;transition: 2s}
+
+.bi20{background-image: url('pic/5.png');height: 250px;width: 31%;background-size: 110% 110%;background-position: center;transition: 2s}
+.bi20:hover{background-size: 100% 100%;transition: 2s}
+
+.bi21{background-image: url('pic/39.jpg');height: 250px;width: 31%;background-size: 110% 110%;background-position: center;transition: 2s}
+.bi21:hover{background-size: 100% 100%;transition: 2s}
+
+.bi22{background-image: url('pic/42.jpg');height: 250px;width: 31%;background-size: 110% 110%;background-position: center;transition: 2s}
+.bi22:hover{background-size: 100% 100%;transition: 2s}
+
+.bi23{background-image: url('pic/40.jpg');height: 250px;width: 31%;background-size: 110% 110%;background-position: center;transition: 2s}
+.bi23:hover{background-size: 100% 100%;transition: 2s}
+
+.bi24{background-image: url('pic/41.jpg');height: 250px;width: 31%;background-size: 110% 110%;background-position: center;transition: 2s}
+.bi24:hover{background-size: 100% 100%;transition: 2s}
+
+.bi25{background-image: url('pic/45.jpg');height: 700px;width: 100;background-attachment: fixed;}
+
+
+
+.bt1{height: 30px;width: 60px;background: #5fa4ed;color: white;border: none;transition: 1s}
+.bt1:hover{background: #2c3238;}
+
+.bt2{height: 30px;width: 70px;color: white;background: #dd63e6;border: none;transition: 1s}
+.bt2:hover{background: #2c3238}
+
+.bt3{height: 30px;width: 110px;color: white;background: #5fa4ed;border:none;transition:1s}
+.bt3:hover{background: #2c3238;}
+
+.bt4{height: 30px;width: 70px;color: white;background: #6fbf13;border:none;transition:1s}
+.bt4:hover{background: #2c3238}
+
+.bt5{height: 30px;width: 75px;background: #6fbf13;color: white;border: none;transition: 1s}
+.bt5:hover{background: #2c3238;}
+
+.bt6{height: 30px;width: 60px;background: #dd63e6;color: white;border: none;transition: 1s}
+.bt6:hover{background: #2c3238;}
+
+.bt7{height: 40px;width: 10%;color: #eb4034;background: white;border-radius: 50px;border: none;font-size: 15px;transition: 1s}
+.bt7:hover{color: white;background: #eb4034}
+
+.bt8{height:35px;width:38px;color:white;background:#f7441b;border:none;margin-left:-10px;}
+.bt8:hover{background: silver;}
+
+.td{text-decoration: none;color: black;transition: 1s}
+.td:hover{color: red}
+
+</style>
+
+</head>
+<body>
+
+	<div class="h100 w100">
+
+		<div class="h100 w30 fl"><br>
+
+			<div class="fs17 ml130">Blog and Magazine</div>
+
+			<div>
+				<i class="fa fa-comments fs35 ml100" aria-hidden="true"></i>
+				<span class="fs30"><b>New</b></span>
+				<span class="fs35 clr"><b>Marg</b></span>
+			</div>
+
+		</div>
+
+		<div class="h100 w70 fl"><br><br>
+
+			<span class="fs20 ml50 clbbk"><a href="index.html" class="td">HOME</a></span>
+			<span class="fs20 ml10 clbbk"><a href="blog.html" class="td">BLOG</a></span>
+			<span class="fs20 ml10 clbbk"><a href="shop list.html" class="td">SHOP LIST</a></span>
+			<span class="fs20 ml10 clbbk"><a href="login.html" class="td">ACCOUNT</a></span>
+			<span class="fs20 ml10 clbbk"><a href="cart.html" class="td">CART</a></span>
+			<span class="fs20 ml10 clbbk"><a href="checkout.html" class="td">CHECKOUT</a></span>
+			<span class="fs20 ml10 clbbk"><a href="about us.html" class="td">ABOUT US</a></span>
+			<span class="fs20 ml10 clbbk"><a href="conatct us.html" class="td">CONTACT US</a></span>
+			<span><i class="fa fa-search fs20 ml10 clbbk" aria-hidden="true"></i></span>
+
+		</div>
+
+	</div>
+
+
+	<div class="h600 w100 ">
+
+		<div class="h600 w65 bggy fl bi1">
+
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+			<center>
+
+			<button class="bt1">#New</button>
+
+			<button class="bt2 ml10">#Health</button>
+
+			<br><br>
+
+			<span class="fs30 clww">Discover your true health</span>
+
+			<br><br>
+
+			<span class="clww ">
+				<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+			</span>
+
+			<span class="clw ml20">
+				<i class="fa fa-clock-o" aria-hidden="true"></i>12 May
+			</span>
+
+			<span class="clww ml20">
+				<i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments
+			</span>
+
+			</center>
+
+		</div>
+
+		<div class="h300 w35 bgr fl bi2">
+
+			<br><br><br><br><br><br><br><br><br><br>
+
+			<center>
+				
+				<button class="bt3 ">#Entertainment</button>
+
+				<button class="bt4 ml10">#Health</button>
+
+				<br><br>
+
+				<span class="fs30 clww">Top 10 Dancers you should</span>
+
+				<br><br>
+
+				<span class="clww ">
+				<i class="fa fa-user-circle" aria-hidden="true"></i>Micheal Jackson
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>1 July
+				</span>
+
+				<span class="clww ml20">
+					<i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments
+				</span>
+
+			</center>
+
+			
+		</div>
+
+		<div class="h300 w35 bgy fl bi3">
+
+			<br><br><br><br><br><br><br><br><br>
+
+			<center>
+
+				<button class="bt5">#Religion</button>
+
+				<button class="bt6 ml10">#New</button>
+
+				<br><br>
+
+				<span class="clww fs30">What did Buddha teach?</span>
+
+				<br><br>
+
+				<span class="clww ">
+				<i class="fa fa-user-circle" aria-hidden="true"></i>Tom Richardson
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>12 June
+				</span>
+
+				<span class="clww ml20">
+					<i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments
+				</span>
+
+			</center>
+		
+		</div>
+		
+	</div>
+
+
+	<div class="h150 w100">
+
+		<br><br><br>
+
+		<div style="height: 50px;width: 12%;color: white;background: #f5492f;font-size: 22px;
+		margin-left: 100px;float: left;">
+			<span style="margin-top: 10px;float: left;margin-left: 12px;">Breaking News</span>
+			
+		</div>
+
+		<div style="height:49px;width: 70%;background: #f5f4df;float:left;box-shadow: 0px 0px 1px 1px #f5dea9">
+			
+			<marquee style="margin-top: 15px;float: left;font-size: 17px;">
+				<i class="fa fa-circle fs10" aria-hidden="true"></i>
+				"Speaks perfect English":Trump`s offensive praise of a Latino Border Patrol agent.
+
+				<i class="fa fa-circle fs10" aria-hidden="true"></i>
+				Watch J.Lo live her best life,Nick Minaj gp regal,and Ariana Grande go religious.
+
+				<i class="fa fa-circle fs10" aria-hidden="true"></i>
+				Tesla fans have found a new person to blame for Elon Musk`s troubles:his girlfriend
+
+				<i class="fa fa-circle fs10" aria-hidden="true"></i>
+				The Pentagon won`t check if US bombs killed kids in Yemen.CNN did it for them.
+			</marquee>
+
+		</div>
+
+	</div>
+
+
+	<div class="h50 w100">
+		
+		<span class="ml100 fs35">Top Trending</span>
+
+	</div>
+
+	<hr class="w90">
+
+	<div class="h400 w100">
+
+		<div class="h400 w40 bgy ml100 fl bi4">
+
+			<div class="h400 w100 bgbk">
+
+				<br><br><br><br><br><br><br><br><br><br><br><br>
+
+			<center>	
+			<span class="clww fs25">Creativity comes within itself for everyone</span><br><br>
+
+			<button class="bt1 ml10">#New</button>
+
+			<button class="bt5 ml10">#Eduction</button>
+
+			<button class="bt2 ml10">#Children</button><br><br>
+
+			<span class="clw fs17">Lorem Ipsum has been the industry`s standard dummy text ever since<br>the 1500s,when an unknown printer took a galley.</span><br><br>
+
+			<span class="clww ">
+				<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>12 May
+				</span>
+
+				<span class="clww ml20">
+					<i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments
+				</span>
+
+			</center>
+
+			</div>
+
+		</div>
+
+		<div class="h400 w20 bgy ml20 fl bi5">
+
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+			<center>
+
+				<span class="cllw fs25">Traffic,A Big Problem</span>
+				<hr class="w90">
+
+				<span class="cllw ">
+					<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>12 May
+				</span>
+
+				<br><br>
+
+				<button class="bt1">#New</button>
+				<button class="bt2 ml10">#Politics</button>
+
+			</center>
+			
+		</div>
+
+		<div class="h400 w20 bgy ml20 fl bi6">
+
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+			<center>
+
+				<span class="cllw fs25">Best Gadgets in town</span>
+				<hr class="w90">
+
+				<span class="cllw ">
+					<i class="fa fa-user-circle" aria-hidden="true"></i>Mr.Gadget
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+				</span>
+
+				<br><br>
+
+				<button class="bt1">#New</button>
+				<button class="bt4 ml10">#Health</button>
+
+			</center>
+			
+		</div>
+
+	</div>
+	
+<br><br><br>
+
+	<div class="h100 w100 bgy bi7">
+		<br>
+
+		<div class="fs17 ml900 ffc cl">Blog and Magazine</div>
+
+			<div>
+				<i class="fa fa-comments fs35 ml900 cl" aria-hidden="true"></i>
+				<span class="fs30 cl"><b>BlogMag</b></span>
+			</div>
+
+	</div>
+
+<br><br>
+
+	<div class="h50 w100 fs30 ml100">Latest Posts</div>
+		
+	<hr class="w90">
+
+	<div class="h400 w100 ">
+
+		<div class="h400 w40 ml100 fl bgr bi8">
+
+			<div class="h400 w100 bgbk">
+
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+
+			<center>
+
+				<span class="fs25 clww">New Generation of people loving food</span><br><br>
+
+				<button class="bt1">#New</button>
+
+				<button class="bt4 ml10">#Sports	</button>
+
+				<button class="bt2 ml10">#Trending</button><br><br>
+
+				<span class="clw fs17">Lorem Ipsum has been the industry`s standard dummy text ever since<br>the 1500s,when an unknown printer took a galley.</span><br><br>
+
+				<span class="clww ">
+				<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>12 May
+				</span>
+
+				<span class="clww ml20">
+					<i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments
+				</span>
+
+			</center>
+
+			</div>
+
+		</div>
+			
+		<div class="h400 w40 ml20 fl bgr bi9">
+
+			<div class="h400 w100 bgbk">
+
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+
+				<center>
+
+				<span class="fs23 clww">2018's most fascinating governor's election,explained</span><br><br>
+
+				<button class="bt1">#New</button>
+
+				<button class="bt4 ml10">#Security</button>
+
+				<button class="bt2 ml10">#Politics</button><br><br>
+
+				<span class="clw fs17">Lorem Ipsum has been the industry`s standard dummy text ever since<br>the 1500s,when an unknown printer took a galley.</span><br><br>
+
+				<span class="clww ">
+				<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>12 May
+				</span>
+
+				<span class="clww ml20">
+					<i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments
+				</span>
+
+			</center>	
+				
+			</div>
+			
+		</div>
+
+	</div>	
+
+	<br>
+
+	<div class="h500 w100 ">
+	
+		<div class="h500 w40  ml100 fl">
+
+			<div class="h130 w100 ">
+
+				<div class="h130 w30  fl">
+
+					<img src="pic/24.jpg" class="h130 w100">
+					
+				</div>
+
+				<div class="h130 w70 fl">
+					
+					<span class="clbbk ml20 fs20">Watch:the 3 best performancesof the 2018 <span class="blbbk ml20 fs20">VMAs</span>
+						</span><br><br>
+
+					<span class="clbbk ml20">
+						<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+					</span>
+
+					<span class="clbk ml20">
+						<i class="fa fa-clock-o" aria-hidden="true"></i>12 May
+					</span>
+
+					<span class="clbbk ml20">
+						<i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments
+					</span><br><br>
+
+					<button class="bt1 ml20">#New</button>
+
+					<button class="bt4 ml10">#Health</button>
+
+				</div>
+
+			</div>
+
+			<hr>
+
+			<div class="h130 w100">
+
+				<div class="h130 w30 fl">
+
+					<img src="pic/25.jpg" class="h130 w100">
+					
+				</div>
+
+				<div class="h130 w70 fl">
+					
+					<span class="clbbk ml20 fs20">Music bringing people together everywhere</span><br><br>
+
+					<span class="clbbk ml20">
+						<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+					</span>
+
+					<span class="clbk ml20">
+						<i class="fa fa-clock-o" aria-hidden="true"></i>12 May
+					</span>
+
+					<span class="clbbk ml20">
+						<i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments
+					</span><br><br>
+
+					<button class="bt1 ml20">#New</button>
+
+					<button class="bt2 ml10">#Health</button>
+
+				</div>
+
+			</div>
+
+			<hr>
+
+			<div class="h130 w100">
+
+				<div class="h130 w30 fl">
+
+					<img src="pic/26.jpg" class="h130 w100">
+					
+				</div>
+
+				<div class="h130 w70 fl">
+					
+					<span class="clbbk ml20 fs20">"Speaks perfect English":Trump's offensive <span class="clbbk ml20 fs20">prasie of a Latino Border Patrol agent</span></span><br><br>
+
+					<span class="clbbk ml20">
+						<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+					</span>
+
+					<span class="clbk ml20">
+						<i class="fa fa-clock-o" aria-hidden="true"></i>12 May
+					</span>
+
+					<span class="clbbk ml20">
+						<i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments
+					</span><br><br>
+
+					<button class="bt1 ml20">#New</button>
+
+					<button class="bt5 ml10">#Health</button>
+
+				</div>
+
+			</div>	
+
+		</div>	
+
+		<div class="h500 w40 fl ml20">
+
+			<div class="h130 w100">
+
+				<div class="h130 w30 fl">
+
+					<img src="pic/27.jpg" class="h130 w100">
+					
+				</div>
+
+				<div class="h130 w70 fl">
+					
+					<span class="clbbk ml20 fs20">7 reasons Hollywood doesn't make <span class="clbbk ml20 fs20">romantic comedian anymore</span></span><br><br>
+
+					<span class="clbbk ml20">
+						<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+					</span>
+
+					<span class="clbk ml20">
+						<i class="fa fa-clock-o" aria-hidden="true"></i>12 May
+					</span>
+
+					<span class="clbbk ml20">
+						<i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments
+					</span><br><br>
+
+					<button class="bt1 ml20">#New</button>
+
+					<button class="bt5 ml10">#Sports</button>
+
+				</div>
+
+			</div>	
+
+			<hr>
+
+			<div class="h130 w100">
+
+				<div class="h130 w30 fl">
+
+					<img src="pic/4.png" class="h130 w100">
+					
+				</div>
+
+				<div class="h130 w70 fl">
+					
+					<span class="clbbk ml20 fs20">Must have gadgets in this century</span><br><br>
+
+					<span class="clbbk ml20">
+						<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+					</span>
+
+					<span class="clbk ml20">
+						<i class="fa fa-clock-o" aria-hidden="true"></i>12 May
+					</span>
+
+					<span class="clbbk ml20">
+						<i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments
+					</span><br><br>
+
+					<button class="bt1 ml20">#New</button>
+
+					<button class="bt2 ml10">#Health</button>
+
+				</div>
+
+			</div>	
+
+			<hr>
+			
+			<div class="h130 w100">
+
+				<div class="h130 w30 fl">
+
+					<img src="pic/28.jpg" class="h130 w100">
+					
+				</div>
+
+				<div class="h130 w70 fl">
+					
+					<span class="clbbk ml20 fs20">Why conservatives love to hate<br><span class="clbbk ml20 fs20"> Alexadria Ocasio-Cortez</span></span><br><br>
+
+					<span class="clbbk ml20">
+						<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+					</span>
+
+					<span class="clbk ml20">
+						<i class="fa fa-clock-o" aria-hidden="true"></i>12 May
+					</span>
+
+					<span class="clbbk ml20">
+						<i class="fa fa-commenting-o" aria-hidden="true"></i>5 comments
+					</span><br><br>
+
+					<button class="bt1 ml20">#New</button>
+
+					<button class="bt5 ml10">#Health</button>
+
+				</div>
+
+			</div>	
+
+		</div>
+
+	</div>
+
+<br>
+
+	<div class="h400 w100 bgr bi10">
+
+		<br><br><br><br><br>
+
+		<center>
+			<span class="clw fs35">Build your dream magazine now</span>
+
+			<p class="clw fs20">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing<br> layouts and visual mockups. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua.</p>
+
+			<button class="bt7">Buy Now</button>
+
+		</center>
+		
+	</div>
+
+<br><br>
+
+	<div class="h50 w100">
+		
+		<span class="fs35 ml100">Most Viewed</span>
+
+	</div>
+
+	<hr class="w90">
+
+	<div class="h400 w100">
+
+		<div class="h400 w20 bggy fl ml100 bi11">
+
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+			<center>
+
+				<span class="cllw fs25">Technology and music</span>
+				<hr class="w90">
+
+				<span class="cllw ">
+					<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+				</span>
+
+				<br><br>
+
+				<button class="bt1">#New</button>
+				<button class="bt2 ml10">#Health</button>
+
+			</center>
+			
+		</div>
+
+		<div class="h400 w20 bggy fl ml20 bi12">
+
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+			<center>
+
+				<span class="cllw fs25">Raising a child</span>
+				<hr class="w90">
+
+				<span class="cllw ">
+					<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+				</span>
+
+				<br><br>
+
+				<button class="bt1">#New</button>
+				<button class="bt5 ml10">#Health</button>
+
+			</center>
+			
+		</div>
+
+		<div class="h400 w20 bggy fl ml20 bi5">
+
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+			<center>
+
+				<span class="cllw fs25">Traveling</span>
+				<hr class="w90">
+
+				<span class="cllw ">
+					<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+				</span>
+
+				<br><br>
+
+				<button class="bt2">#New</button>
+				<button class="bt5 ml10">#Health</button>
+
+			</center>
+			
+		</div>
+
+		<div class="h400 w20 bggy fl ml20 bi13">
+
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+			<center>
+
+				<span class="cllw fs25">Chester Bennington</span>
+				<hr class="w90">
+
+				<span class="cllw ">
+					<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+				</span>
+
+				<br><br>
+
+				<button class="bt1">#New</button>
+				<button class="bt5 ml10">#Health</button>
+
+			</center>
+			
+		</div>
+		
+	</div>
+
+<br><br>
+
+	<div class="h50 w100">
+		
+		<span class="fs30 ml100">Fashion</span>
+
+	</div>
+
+	<hr class="w90">
+
+	<div class="h600 w85 ml100">
+
+		<div class="h600 w25 fl">
+
+			<div class="h400 w100 bi14">
+
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+				<center>
+
+				<span class="cllw fs20">Upcoming 50% sales off</span>
+				<hr class="w90">
+
+				<span class="cllw ">
+					<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+				</span>
+
+				<br><br>
+
+				<button class="bt1">#New</button>
+				<button class="bt2 ml10">#Fashion</button>
+
+				</center>
+				
+			</div>
+
+			<div class="h200 w100 bggy mt10 bi15">
+
+				<br><br><br><br>
+
+				<center>
+
+				<span class="cllw fs20">Best Outfit For Winter</span>
+				<hr class="w90">
+
+				<span class="cllw ">
+					<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+				</span>
+
+				<br><br>
+
+				<button class="bt1">#New</button>
+				<button class="bt2 ml10">#Fashion</button>
+
+				</center>
+				
+			</div>
+			
+		</div>
+
+		<div class="h550 w25 ml10 fl">
+
+			<div class="h200 w100 bggy bi16">
+
+				<br><br><br><br>
+
+				<center>
+
+				<span class="cllw fs20">The Killer Looks</span>
+				<hr class="w90">
+
+				<span class="cllw ">
+					<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+				</span>
+
+				<br><br>
+
+				<button class="bt1">#New</button>
+				<button class="bt5 ml10">#Fashion</button>
+
+				</center>				
+				
+			</div>
+
+			<div class="h400 w100 bggy mt10 bi17">
+
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+				<center>
+
+				<span class="cllw fs20">Look Best For Interview</span>
+				<hr class="w90">
+
+				<span class="cllw ">
+					<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+				</span>
+
+				<br><br>
+
+				<button class="bt1">#New</button>
+				<button class="bt2 ml10">#Fashion</button>
+
+				</center>
+				
+			</div>
+			
+		</div>
+
+		<div class="h610 w48 bgb ml10 fl bi18">
+
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+				<center>
+
+				<span class="cllw fs23">Lopez announces her new fashion collection</span>
+				<hr class="w90">
+
+				<span class="cllw ">
+					<i class="fa fa-user-circle" aria-hidden="true"></i>John Deo
+				</span>
+
+				<span class="clw ml20">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+				</span>
+
+				<br><br>
+
+				<button class="bt1">#New</button>
+				<button class="bt5 ml10">#Fashion</button>
+
+				</center>
+			
+		</div>
+		
+	</div>
+
+<br><br>
+
+	<div class="h600 w90 ml100">
+		
+		<div class="h250 w100">
+
+			<div class="h250 w31 bgr fl bi19">
+
+				<div class="h250 w100 bgbk">
+
+					<br><br><br><br>
+
+					<center>
+					
+						<span class="fs25 cllw">Top 10 guitar Riffs</span><br><br>
+
+						<button class="bt1">#New</button>
+						<button class="bt2">#Music</button>
+						<button class="bt5">#Trending</button><br><br>
+
+						<span class="clgyy fs17">
+							<i class="fa fa-user-circle" aria-hidden="true"></i>Mr.Gadget
+						</span>
+
+						<span class="clgy ml10">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+						</span>
+
+						<span class="clgyy ml10">
+							<i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments
+						</span>
+
+					</center>
+
+				</div>	
+				
+			</div>
+			
+			<div class="h250 w31 bgr fl ml10 bi20">
+
+				<div class="h250 w100 bgbk">
+
+					<br><br><br><br>
+
+					<center>
+					
+						<span class="fs25 cllw">Top Golf Courts</span><br><br>
+
+						<button class="bt1">#New</button>
+						<button class="bt2">#Sports</button>
+						<button class="bt5">#Trending</button><br><br>
+
+						<span class="clgyy fs17">
+							<i class="fa fa-user-circle" aria-hidden="true"></i>John Doe
+						</span>
+
+						<span class="clgy ml10">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+						</span>
+
+						<span class="clgyy ml10">
+							<i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments
+						</span>
+
+					</center>
+
+				</div>	
+				
+			</div>
+
+			<div class="h250 w31 bgr fl ml10 bi21">
+
+				<div class="h250 w100 bgbk">
+
+					<br><br><br><br>
+
+					<center>
+					
+						<span class="fs25 cllw">Early Morning Breakfast</span><br><br>
+
+						<button class="bt1">#New</button>
+						<button class="bt2">#Sports</button>
+						<button class="bt5">#Trending</button><br><br>
+
+						<span class="clgyy fs17">
+							<i class="fa fa-user-circle" aria-hidden="true"></i>John Doe
+						</span>
+
+						<span class="clgy ml10">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+						</span>
+
+						<span class="clgyy ml10">
+							<i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments
+						</span>
+
+					</center>
+
+				</div>	
+
+			</div>
+
+		</div>
+
+		<div class="h250 w100 mt10">
+
+			<div class="h250 w31 bgr fl bi22">
+
+				<div class="h250 w100 bgbk">
+
+					<br><br><br><br>
+
+					<center>
+					
+						<span class="fs25 cllw">Children The Next Gen</span><br><br>
+
+						<button class="bt1">#New</button>
+						<button class="bt2">#Sports</button>
+						<button class="bt5">#Trending</button><br><br>
+
+						<span class="clgyy fs17">
+							<i class="fa fa-user-circle" aria-hidden="true"></i>John Doe
+						</span>
+
+						<span class="clgy ml10">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+						</span>
+
+						<span class="clgyy ml10">
+							<i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments
+						</span>
+
+					</center>
+
+				</div>	
+				
+			</div>
+
+			<div class="h250 w31 bgr fl ml10 bi23">
+
+				<div class="h250 w100 bgbk">
+
+					<br><br><br><br>
+
+					<center>
+					
+						<span class="fs25 cllw">Summer Beach</span><br><br>
+
+						<button class="bt1">#New</button>
+						<button class="bt2">#Sports</button>
+						<button class="bt5">#Trending</button><br><br>
+
+						<span class="clgyy fs17">
+							<i class="fa fa-user-circle" aria-hidden="true"></i>John Doe
+						</span>
+
+						<span class="clgy ml10">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+						</span>
+
+						<span class="clgyy ml10">
+							<i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments
+						</span>
+
+					</center>
+
+				</div>	
+				
+			</div>
+
+			<div class="h250 w31 bgr fl ml10 bi24">
+
+				<div class="h250 w100 bgbk">
+
+					<br><br><br><br>
+
+					<center>
+					
+						<span class="fs25 cllw">Mountains Calling</span><br><br>
+
+						<button class="bt1">#New</button>
+						<button class="bt2">#Sports</button>
+						<button class="bt5">#Trending</button><br><br>
+
+						<span class="clgyy fs17">
+							<i class="fa fa-user-circle" aria-hidden="true"></i>John Doe
+						</span>
+
+						<span class="clgy ml10">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>12 April
+						</span>
+
+						<span class="clgyy ml10">
+							<i class="fa fa-commenting-o" aria-hidden="true"></i>2 comments
+						</span>
+
+					</center>
+
+				</div>	
+				
+			</div>
+			
+		</div>
+
+	</div>
+
+
+	<div class="h700 w100 bgy bi25">
+
+		<br><br><br>
+
+		<center>
+			<span class="fs23 clw">Find Us on Instagram</span>
+			<hr class="w15">
+		</center>
+
+		<div class="h200 w85 ml100">
+
+			<div class="h200 w16 bgr fl">
+
+				<img src="pic/46.jpg" class="h200 w100">
+
+			</div>
+
+			<div class="h200 w16 bggy fl">
+
+				<img src="pic/47.jpg" class="h200 w100">
+				
+			</div>
+
+			<div class="h200 w16 bgr fl">
+
+				<img src="pic/48.jpg" class="h200 w100">
+				
+			</div>
+
+			<div class="h200 w16 bggy fl">
+
+				<img src="pic/49.jpg" class="h200 w100">
+				
+			</div>
+
+			<div class="h200 w16 bgr fl">
+
+				<img src="pic/46.jpg" class="h200 w100">
+				
+			</div>
+
+			<div class="h200 w16 bggy fl">
+
+				<img src="pic/48.jpg" class="h200 w100">
+				
+			</div>
+			
+		</div>
+
+<br><br>		
+
+		<div class="h250 w100">
+
+			<div class="h250 w26 fl ml100">
+
+				<span class="fs20 clw">NewMag</span>
+				<hr>
+				<span class="fs17 clgy">amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</span><br><br>
+
+				<span class="fs20 cllw"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+				<span class="fs20 cllw ml10"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+				<span class="fs20 cllw ml10"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+				
+			</div>
+
+			<div class="h250 w15 fl ml20">
+
+				<span class="fs23 clw">Categories</span>
+				<hr>
+				<span class="clgy fs17">Entertainment</span><br><br>
+				<span class="clgy fs17">Sports</span><br><br>
+				<span class="clgy fs17">Polictics</span><br><br>
+				<span class="clgy fs17">National</span><br><br>
+				<span class="clgy fs17">Blog</span>
+				
+			</div>
+
+			<div class="h250 w15 fl ml20">
+
+				<span class="fs23 clw">Popular Tags</span>
+				<hr>
+				<span class="clgy fs17">Entertainment</span><br><br>
+				<span class="clgy fs17">Sports</span><br><br>
+				<span class="clgy fs17">Polictics</span><br><br>
+				<span class="clgy fs17">National</span><br><br>
+				<span class="clgy fs17">International</span>		
+				
+			</div>
+
+			<div class="h200 w26 fl ml20">
+
+				<span class="fs23 clw">Newspaper</span>
+				<hr>
+				<span class="clgy fs17">Dont Miss Anything</span><br><br>
+				<span class="fs17 clgy">Subscribe to our #newsletter</span><br><br>
+				<input type="email" placeholder="Enter Email" class="h30 w80 br">
+				<button class="bt8"><i class="fa fa-paper-plane fs17" aria-hidden="true"></i></button>
+				
+			</div>
+			
+		</div>
+
+		<center>
+			<hr class="w30">
+			<span class="clw fs17">Copyright © 2023</span>
+			<span class="clr fs17">Hi-Tech</span>
+			<span class="clw fs17">- All Rights reserved</span>
+			<hr class="w30">
+		</center>
+
+		
+		
+	</div>
+
+</body>
+</html>
